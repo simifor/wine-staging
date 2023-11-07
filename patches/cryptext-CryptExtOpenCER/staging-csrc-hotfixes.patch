@@ -1,0 +1,91 @@
+diff --git a/patches/cryptext-CryptExtOpenCER/0001-cryptext-Implement-CryptExtOpenCER.patch b/patches/cryptext-CryptExtOpenCER/0001-cryptext-Implement-CryptExtOpenCER.patch
+index 02a5bfcf..f06fbd96 100644
+--- a/patches/cryptext-CryptExtOpenCER/0001-cryptext-Implement-CryptExtOpenCER.patch
++++ b/patches/cryptext-CryptExtOpenCER/0001-cryptext-Implement-CryptExtOpenCER.patch
+@@ -157,7 +157,7 @@ index 00000000000..522fc60a4af
+ @@ -0,0 +1,4 @@
+ +TESTDLL = cryptext.dll
+ +
+-+C_SRCS = \
+++SOURCES = \
+ +	cryptext.c
+ diff --git a/dlls/cryptext/tests/cryptext.c b/dlls/cryptext/tests/cryptext.c
+ new file mode 100644
+diff --git a/patches/d3d12core-D3D12GetInterface/0001-d3d12core-Add-D3D12GetInterface-stub.patch b/patches/d3d12core-D3D12GetInterface/0001-d3d12core-Add-D3D12GetInterface-stub.patch
+index 203155a6..6dba797b 100644
+--- a/patches/d3d12core-D3D12GetInterface/0001-d3d12core-Add-D3D12GetInterface-stub.patch
++++ b/patches/d3d12core-D3D12GetInterface/0001-d3d12core-Add-D3D12GetInterface-stub.patch
+@@ -18,7 +18,7 @@ index 8778b66138b..94d8fd4da00 100644
+ @@ -1 +1,4 @@
+  MODULE = d3d12core.dll
+ +
+-+C_SRCS = \
+++SOURCES = \
+ +	d3d12core_main.c
+ diff --git a/dlls/d3d12core/d3d12core.spec b/dlls/d3d12core/d3d12core.spec
+ index c9c73bd4ee4..3f3e0a0f2e1 100644
+diff --git a/patches/odbc-remove-unixodbc/0004-odbc32-Add-initial-tests.patch b/patches/odbc-remove-unixodbc/0004-odbc32-Add-initial-tests.patch
+index 4cfc477f..671f130c 100644
+--- a/patches/odbc-remove-unixodbc/0004-odbc32-Add-initial-tests.patch
++++ b/patches/odbc-remove-unixodbc/0004-odbc32-Add-initial-tests.patch
+@@ -45,7 +45,7 @@ index 00000000000..4d8716ed2ed
+ +TESTDLL   = odbc32.dll
+ +IMPORTS   = odbc32
+ +
+-+C_SRCS = connection.c
+++SOURCES = connection.c
+ diff --git a/dlls/odbc32/tests/connection.c b/dlls/odbc32/tests/connection.c
+ new file mode 100644
+ index 00000000000..b04d93c42c5
+diff --git a/patches/windows.networking.connectivity-new-dll/0003-windows.networking.connectivity-Add-stub-dll.patch b/patches/windows.networking.connectivity-new-dll/0003-windows.networking.connectivity-Add-stub-dll.patch
+index ab1b8f7d..f5472773 100644
+--- a/patches/windows.networking.connectivity-new-dll/0003-windows.networking.connectivity-Add-stub-dll.patch
++++ b/patches/windows.networking.connectivity-new-dll/0003-windows.networking.connectivity-Add-stub-dll.patch
+@@ -38,7 +38,7 @@ index 00000000000..6fc24a72feb
+ +
+ +EXTRADLLFLAGS = -mno-cygwin
+ +
+-+C_SRCS = \
+++SOURCES = \
+ +	windows.networking.connectivity_main.c
+ diff --git a/dlls/windows.networking.connectivity/windows.networking.connectivity.spec b/dlls/windows.networking.connectivity/windows.networking.connectivity.spec
+ new file mode 100644
+diff --git a/patches/winedevice-Default_Drivers/0001-win32k.sys-Add-stub-driver.patch b/patches/winedevice-Default_Drivers/0001-win32k.sys-Add-stub-driver.patch
+index cd4edccb..7e965e02 100644
+--- a/patches/winedevice-Default_Drivers/0001-win32k.sys-Add-stub-driver.patch
++++ b/patches/winedevice-Default_Drivers/0001-win32k.sys-Add-stub-driver.patch
+@@ -37,7 +37,7 @@ index 00000000000..7fac5d557eb
+ +IMPORTS   = ntoskrnl
+ +EXTRADLLFLAGS = -mno-cygwin -Wb,--subsystem,native
+ +
+-+C_SRCS = \
+++SOURCES = \
+ +	main.c
+ diff --git a/dlls/win32k.sys/main.c b/dlls/win32k.sys/main.c
+ new file mode 100644
+diff --git a/patches/winedevice-Default_Drivers/0002-dxgkrnl.sys-Add-stub-driver.patch b/patches/winedevice-Default_Drivers/0002-dxgkrnl.sys-Add-stub-driver.patch
+index 0222604f..3ddedb0d 100644
+--- a/patches/winedevice-Default_Drivers/0002-dxgkrnl.sys-Add-stub-driver.patch
++++ b/patches/winedevice-Default_Drivers/0002-dxgkrnl.sys-Add-stub-driver.patch
+@@ -35,7 +35,7 @@ index 00000000000..50390fbbb1e
+ +IMPORTS   = ntoskrnl
+ +EXTRADLLFLAGS = -mno-cygwin -Wb,--subsystem,native
+ +
+-+C_SRCS = \
+++SOURCES = \
+ +	main.c
+ diff --git a/dlls/dxgkrnl.sys/dxgkrnl.sys.spec b/dlls/dxgkrnl.sys/dxgkrnl.sys.spec
+ new file mode 100644
+diff --git a/patches/winedevice-Default_Drivers/0003-dxgmms1.sys-Add-stub-driver.patch b/patches/winedevice-Default_Drivers/0003-dxgmms1.sys-Add-stub-driver.patch
+index 08091e0d..6cceb5d6 100644
+--- a/patches/winedevice-Default_Drivers/0003-dxgmms1.sys-Add-stub-driver.patch
++++ b/patches/winedevice-Default_Drivers/0003-dxgmms1.sys-Add-stub-driver.patch
+@@ -35,7 +35,7 @@ index 00000000000..3ecc3ee5a3e
+ +IMPORTS   = ntoskrnl
+ +EXTRADLLFLAGS = -mno-cygwin -Wb,--subsystem,native
+ +
+-+C_SRCS = \
+++SOURCES = \
+ +	main.c
+ diff --git a/dlls/dxgmms1.sys/dxgmms1.sys.spec b/dlls/dxgmms1.sys/dxgmms1.sys.spec
+ new file mode 100644 
